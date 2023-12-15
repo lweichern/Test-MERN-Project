@@ -18,7 +18,7 @@ function Navbar() {
   };
   return (
     <nav className="flex justify-between bg-blue-800 p-2">
-      <h1 className="  text-3xl">Blog!</h1>
+      <h1 className="  text-3xl">Blogs!</h1>
       <button
         className=" bg-white rounded text-blue-800 px-2 hover:bg-slate-200"
         onClick={addBlog}
