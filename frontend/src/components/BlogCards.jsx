@@ -6,7 +6,9 @@ import { useBlogpostStore } from "../../lib/stateManagement";
 function BlogCards({ blog }) {
   const fetchBlog = useBlogpostStore((state) => state.fetchBlogs);
   const deleteBlog = async () => {
-    await axios.delete(`http://localhost:3001/blog/${blog._id}`);
+    await axios.delete(
+      `https://mern-backend-p7rt.onrender.com/blog/${blog._id}`
+    );
     fetchBlog();
   };
 

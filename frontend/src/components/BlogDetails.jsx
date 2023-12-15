@@ -9,7 +9,7 @@ function BlogDetails() {
   useEffect(() => {
     const fetchBlog = async () => {
       const blogDetails = (
-        await axios.get(`http://localhost:3001/blog/${blogId}`)
+        await axios.get(`https://mern-backend-p7rt.onrender.com/blog/${blogId}`)
       ).data;
 
       setBlog(blogDetails);
